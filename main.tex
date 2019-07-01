@@ -1,0 +1,65 @@
+%%
+\documentclass[9pt]{elsarticle}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{amssymb}           
+\usepackage{graphics,graphicx,amssymb,amsmath,amsfonts,verbatim}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage[subnum]{cases}
+\usepackage{color}
+\usepackage{lineno}
+
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+
+\title{General RFX References}
+\author{Andrea Rigoni Garola}
+\date{June 2019}
+
+% \usepackage{natbib}
+\usepackage{graphicx}
+
+\usepackage{multibbl}
+\usepackage{url}
+
+\begin{document}
+
+\maketitle
+
+%%
+%%  MACHINE LEARNING
+%%
+\newbibliography{ML}
+\bibliographystyle{ML}{plain}
+\nocite{ML}{*}
+\bibliography{ML}{ML}{Machine Learning}
+
+%%
+%%  PLASMA PHYSICS
+%%
+\newbibliography{plasma}
+\bibliographystyle{plasma}{plain}
+\nocite{plasma}{*}
+\bibliography{plasma}{plasma}{Plasma Physics}
+
+%%
+%%  RFX EXPERIMENT
+%%
+\newbibliography{rfx}
+\bibliographystyle{rfx}{plain}
+\nocite{rfx}{*}
+\bibliography{rfx}{rfx}{RFX}
+
+%%
+%%  SPIDER AND MITICA
+%%
+\newbibliography{spider}
+\bibliographystyle{spider}{plain}
+\nocite{spider}{*}
+\bibliography{spider}{spider, mitica}{Spider and Mitica}
+
+
+
+\end{document}
